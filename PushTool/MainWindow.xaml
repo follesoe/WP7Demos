@@ -1,0 +1,11 @@
+﻿<Window x:Class="PushTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="channelUrl" Margin="22,26,49,239" />
+        <TextBox x:Name="text1" Margin="22,78,49,194" />
+        <TextBox x:Name="text2" Margin="22,132,49,136" />
+        <Button Content="Push" x:Name="push" Click="push_Click" Margin="153,181,49,78" />
+    </Grid>
+</Window>
