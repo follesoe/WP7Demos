@@ -15,9 +15,10 @@ namespace AppModelDemo
 
         private void save_Click(object sender, System.Windows.RoutedEventArgs e)
         {
+            /*
             var viewModel = (ViewModel) DataContext;
             StorageHelper.Save("ExpenceReport.xml", viewModel);
-            viewModel.IsDirty = false;
+            viewModel.IsDirty = false;*/
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

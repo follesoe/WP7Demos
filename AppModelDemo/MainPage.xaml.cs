@@ -22,6 +22,7 @@ namespace AppModelDemo
 
         protected override void OnBackKeyPress(CancelEventArgs e)
         {
+            /*
             var viewModel = (ViewModel)DataContext;
             if (viewModel.IsDirty)
             {
@@ -34,7 +35,7 @@ namespace AppModelDemo
                 {
                     e.Cancel = true;
                 }
-            }
+            }*/
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

@@ -51,6 +51,7 @@ namespace AppModelDemo
         {            
             Debug.WriteLine("Launching");
 
+            /*
             if (StorageHelper.FileExists("ExpenceReport.xml"))
             {
                 var viewModel = StorageHelper.Load<ViewModel>("ExpenceReport.xml");
@@ -61,6 +62,7 @@ namespace AppModelDemo
             {
                 RootFrame.DataContext = new ViewModel();
             }
+            */
         }
 
         // Code to execute when the application is activated (brought to foreground)
@@ -69,11 +71,12 @@ namespace AppModelDemo
         {
             Debug.WriteLine("Activated");
 
+            /*
             if (PhoneApplicationService.Current.State.ContainsKey("ExpenceReport"))
             {
                 RootFrame.DataContext = PhoneApplicationService.Current.State["ExpenceReport"];
                 PhoneApplicationService.Current.State.Remove("ExpenceReport");
-            }            
+            }*/            
         }
 
         // Code to execute when the application is deactivated (sent to background)
@@ -82,6 +85,7 @@ namespace AppModelDemo
         {
             Debug.WriteLine("Deactivated");
 
+            /*
             var viewModel = (ViewModel)RootFrame.DataContext;
 
             if (PhoneApplicationService.Current.State.ContainsKey("ExpenceReport"))
@@ -89,6 +93,7 @@ namespace AppModelDemo
                 PhoneApplicationService.Current.State.Remove("ExpenceReport");
             }
             PhoneApplicationService.Current.State.Add("ExpenceReport", viewModel);
+            */
         }
 
         // Code to execute when the application is closing (eg, user hit Back)
